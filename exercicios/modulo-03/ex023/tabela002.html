@@ -16,6 +16,7 @@
         table {
             width: 600px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td,
@@ -24,12 +25,18 @@
             padding: 10px;
         }
 
-        tbody>tr:nth-child(2n) {
-            background-color: lightblue;
+        tbody>tr:nth-child(2n-1) {
+            background-color: white;
         }
 
-        tbody>tr:nth-child(2n-1) {
+        tbody>tr:nth-child(2n) {
             background-color: gray;
+        }
+
+        thead>tr>th {
+            position: sticky;
+            top: 0;
+            background-color: grey;
         }
 
         thead,
